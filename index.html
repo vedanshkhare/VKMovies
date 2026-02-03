@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VK Operator</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="card">
+  <h1>VK Movies Operator</h1>
+
+  <form id="videoForm">
+    <input id="title" placeholder="Video Title" required>
+    <input id="youtube" placeholder="YouTube Link" required>
+    <input id="thumbnail" placeholder="Custom Thumbnail URL (optional)">
+    <button type="submit">Add Video</button>
+  </form>
+</div>
+
+<!-- JSON POPUP -->
+<div id="jsonModal" class="modal">
+  <div class="modal-content">
+    <h2>Updated videos.json</h2>
+    <textarea id="jsonOutput" readonly></textarea>
+    <button id="copyJson">Copy JSON</button>
+    <button id="closeModal" class="secondary">Close</button>
+  </div>
+</div>
+
+<script src="app1.js"></script>
+</body>
+</html>
